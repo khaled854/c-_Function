@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C++ Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>C++ Programming Portfolio</h1>
+        <p class="subtitle">Programs ordered from easiest to hardest</p>
+
+        <!-- Program 1 -->
+        <div class="card">
+            <h2>1. Sum of Two Numbers</h2>
+            <p class="desc">
+                This program uses a void function to calculate and display the sum of two integers.
+            </p>
+
+            <pre><code>
+#include &lt;iostream&gt;
+using namespace std;
+
+int sum(int n) {
+    int total = 0;
+    for (int i = 1; i &lt;= n; i++) {
+        total += i;
+    }
+    return total;
+}
+
+int main() {
+    int n;
+    cout &lt;&lt; "Enter a positive number: ";
+    cin &gt;&gt; n;
+
+    cout &lt;&lt; "The sum of numbers from 1 to "
+         &lt;&lt; n &lt;&lt; " is: " &lt;&lt; sum(n) &lt;&lt; endl;
+
+    return 0;
+}
+        </code></pre>
+
+            <h3>Program Output</h3>
+            <img src="https://i.postimg.cc/g2jYTJS3/Screenshot-2026-01-18-181106.png" alt="Program 1 Output">
+        </div>
+
+        <!-- Program 2 -->
+        <div class="card">
+            <h2>2. Sum from 1 to N</h2>
+            <p class="desc">
+                This program calculates the sum of all numbers from 1 to N using a loop.
+            </p>
+
+            <pre><code>
+#include &lt;iostream&gt;
+using namespace std;
+
+int sum(int n) {
+    int total = 0;
+    for(int i = 1; i &lt;= n; i++)
+        total += i;
+    return total;
+}
+
+int main() {
+    int n;
+    cin &gt;&gt; n;
+    cout &lt;&lt; sum(n);
+    return 0;
+}
+        </code></pre>
+
+            <h3>Program Output</h3>
+            <img src="https://i.postimg.cc/wBksQ37y/Screenshot-2026-01-18-180427.png" alt="Program 2 Output">
+        </div>
+
+        <!-- Program 3 -->
+        <div class="card">
+            <h2>3. Smallest of Three Numbers</h2>
+            <p class="desc">
+                This program determines the smallest number among three inputs using conditional statements.
+            </p>
+
+            <pre><code>
+#include &lt;iostream&gt;
+using namespace std;
+
+int min(int a, int b, int c) {
+    if(a &lt; b &amp;&amp; a &lt; c) return a;
+    else if(b &lt; a &amp;&amp; b &lt; c) return b;
+    else return c;
+}
+
+int main() {
+    int x, y, z;
+     cout &lt;&lt; " enter three numbers: " &lt;&lt; endl; 
+    cin &gt;&gt; x &gt;&gt; y &gt;&gt; z;
+    cout &lt;&lt; "smallest number is: " &lt;&lt; min(x, y, z);
+    return 0;
+}
+        </code></pre>
+
+            <h3>Program Output</h3>
+            <img src="https://i.postimg.cc/qvJrCRHd/Screenshot-2026-01-18-175934.png" alt="Program 3 Output">
+        </div>
+
+        <!-- Program 4 -->
+        <div class="card">
+            <h2>4. Calculator Using Functions</h2>
+            <p class="desc">
+                This program performs basic arithmetic operations using function prototypes and definitions.
+            </p>
+
+            <pre><code>
+#include &lt;iostream&gt;
+using namespace std;
+
+// Function Prototypes
+int add(int a, int b);
+int sub(int a, int b);
+int mul(int a, int b);
+float div(float a, float b);
+
+int main() {
+    float num1, num2;
+    cout &lt;&lt; "enter two numbers: " &lt;&lt; endl;
+    cin &gt;&gt; num1 &gt;&gt; num2;
+
+    cout &lt;&lt; "Addition: " &lt;&lt; add(num1, num2) &lt;&lt; endl;
+    cout &lt;&lt; "Subtraction: " &lt;&lt; sub(num1, num2) &lt;&lt; endl;
+    cout &lt;&lt; "Multiplication: " &lt;&lt; mul(num1, num2) &lt;&lt; endl;
+    cout &lt;&lt; "Division: " &lt;&lt; div(num1, num2) &lt;&lt; endl;
+
+    return 0;
+}
+
+// Function Definitions
+int add(int a, int b) { return a + b; }
+int sub(int a, int b) { return a - b; }
+int mul(int a, int b) { return a * b; }
+float div(float a, float b) { return a / b; }
+        </code></pre>
+
+            <h3>Program Output</h3>
+            <img src="https://i.postimg.cc/kGBYK0MT/Screenshot-2026-01-18-174612.png" alt="Program 4 Output">
+        </div>
+
+    </div>
+
+</body>
+
+</html>
